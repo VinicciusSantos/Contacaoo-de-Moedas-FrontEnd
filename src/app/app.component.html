@@ -1,1 +1,21 @@
-<h1>teste</h1>
+<div class="container">
+    <main>
+        <h1>CONVERSOR DE MOEDAS</h1>
+
+        <form nz-form (ngSubmit)="submitForm()">
+            <nz-form-item>
+              <nz-form-control [nzSpan]="14">
+                <input
+                    nz-input
+                    placeholder="Insira um valor"
+                    name="valor"
+                    type="number"
+                    min="0"
+                    formControlName="valor"
+                >
+              </nz-form-control>
+            </nz-form-item >
+            <button>Clica aqui</button>
+          </form>
+    </main>
+</div>

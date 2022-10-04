@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #fffd9b 0, #ffeb87 16.67%, #ffd66f 33.33%, #f2bd53 50%, #e3a437 66.67%, #d78f1f 83.33%, #cf7c07 100%);
+}
+
+main {
+    width: 30%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.1);
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        margin-top: 20px;
+        width: 100%;
+
+        input {
+            width: 100%;
+            font-size: 20px;
+            padding: 3px;
+        }
+    }
+}
