@@ -20,7 +20,8 @@ export class AppComponent {
     
   ngOnInit(): void {
     this.validateForm = this.fb.group({
-      valor: [null, [Validators.required]]
+      valor: [null, [Validators.required]],
+      moeda: [null, [Validators.required]]
     });
   }
 }
