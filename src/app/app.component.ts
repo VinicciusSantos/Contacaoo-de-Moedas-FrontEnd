@@ -12,7 +12,9 @@ export class AppComponent {
   title = 'contacao-de-moedas-frontend';
   moedas = moedas;
   seletor = ['formatacao-seletor']
-
+  text = ['formatacao-h3']
+  apresentacao = "organição-dos-h4s";
+  fonte = "formatacao-h4"
   validateForm!: UntypedFormGroup;
 
   submitForm(): void {

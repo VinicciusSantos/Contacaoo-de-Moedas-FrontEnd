@@ -9,7 +9,7 @@
 }
 
 main {
-    width: 30%;
+    width: 26%;
     min-width: 20rem;
     height: 70%;
     background-color: white;
@@ -36,8 +36,17 @@ main {
         .formatacao-seletor{
             width: 240px;
             margin-top: 3%;
+        }   
+        .formatacao-h3{
+            font-size: 13px;
+            margin-top: 20px;
         }
-        
+        .organição-dos-h4s{
+            max-width: 600px;
+        }
+        .formatacao-h4{
+            font-size: 10px;
+        }
         button {
           font-weight: 500;
           padding: 5px 10px;

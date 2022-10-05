@@ -48,6 +48,39 @@
         </nz-form-control>
       </nz-form-item>
       <button>Clica aqui</button>
+      <h3 [ngClass]="text"> Resultado:</h3>
+    </form>
+    <form nz-form (ngSubmit)="submitForm()">
+      <h1>Cotação atual</h1>
+      <nz-form-item>
+        <nz-form-control [nzSpan]="12" nzErrorTip="Please select your gender!">
+          <nz-select
+            id="gender"
+            formControlName="gender"
+            nzPlaceHolder="Selecione uma moeda"
+            formControlName="moeda"
+            [ngClass]="seletor"
+          >
+            <nz-option
+              [nzValue]="moeda.abreviacao"
+              [nzLabel]="moeda.nome"
+              *ngFor="let moeda of moedas"
+            >
+            </nz-option>
+          </nz-select>
+          <h3 [ngClass]="text">Moeda: RBL</h3>
+          <div [ngClass]="apresentacao">
+            <div>
+              <h4 [ngClass]="fonte">Valor de Compra:</h4>
+              <h4 [ngClass]="fonte">Valor de Venda:</h4>
+            </div>
+            <div>
+              <h4 [ngClass]="fonte">Variação Máximo:</h4>
+              <h4 [ngClass]="fonte">Variação Mínimo:</h4>
+            </div>
+          </div>
+        </nz-form-control>
+      </nz-form-item>
     </form>
   </main>
 </div>
