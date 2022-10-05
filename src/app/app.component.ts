@@ -11,6 +11,7 @@ export class AppComponent {
   constructor(private fb: UntypedFormBuilder) {}
   title = 'contacao-de-moedas-frontend';
   moedas = moedas;
+  seletor = ['formatacao-seletor']
 
   validateForm!: UntypedFormGroup;
 

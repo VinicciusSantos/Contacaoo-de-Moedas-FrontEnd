@@ -22,6 +22,21 @@
             formControlName="gender"
             nzPlaceHolder="Selecione uma moeda"
             formControlName="moeda"
+            [ngClass]="seletor"
+          >
+            <nz-option
+              [nzValue]="moeda.abreviacao"
+              [nzLabel]="moeda.nome"
+              *ngFor="let moeda of moedas"
+            >
+            </nz-option>
+          </nz-select>
+          <nz-select
+            id="gender"
+            formControlName="gender"
+            nzPlaceHolder="Selecione uma moeda"
+            formControlName="moeda"
+            [ngClass]="seletor"
           >
             <nz-option
               [nzValue]="moeda.abreviacao"
