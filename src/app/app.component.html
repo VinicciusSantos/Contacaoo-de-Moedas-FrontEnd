@@ -2,7 +2,7 @@
   <main>
     <h1>CONVERSOR DE MOEDAS</h1>
 
-    <form nz-form (ngSubmit)="submitForm()">
+    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
       <nz-form-item>
         <nz-form-control [nzSpan]="14">
           <input
@@ -19,10 +19,8 @@
         <nz-form-control [nzSpan]="12" nzErrorTip="Please select your gender!">
           <nz-select
             id="gender"
-            formControlName="gender"
             nzPlaceHolder="Selecione uma moeda"
-            formControlName="moeda"
-            [ngClass]="seletor"
+            formControlName="moedaInicial"
           >
             <nz-option
               [nzValue]="moeda.abreviacao"
@@ -35,8 +33,7 @@
             id="gender"
             formControlName="gender"
             nzPlaceHolder="Selecione uma moeda"
-            formControlName="moeda"
-            [ngClass]="seletor"
+            formControlName="moedaFinal"
           >
             <nz-option
               [nzValue]="moeda.abreviacao"
