@@ -10,6 +10,7 @@
 
 main {
     width: 30%;
+    min-width: 20rem;
     height: 70%;
     background-color: white;
     border-radius: 10px;
@@ -29,6 +30,19 @@ main {
             width: 100%;
             font-size: 20px;
             padding: 3px;
+            padding-left: 10px;
+        }
+
+        button {
+          font-weight: 500;
+          padding: 5px 10px;
+          border: none;
+          background-color: #ffd770;
+          border-radius: 5px;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
     }
 }
