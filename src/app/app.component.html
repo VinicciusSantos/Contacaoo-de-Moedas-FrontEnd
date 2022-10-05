@@ -1,21 +1,37 @@
 <div class="container">
-    <main>
-        <h1>CONVERSOR DE MOEDAS</h1>
+  <main>
+    <h1>CONVERSOR DE MOEDAS</h1>
 
-        <form nz-form (ngSubmit)="submitForm()">
-            <nz-form-item>
-              <nz-form-control [nzSpan]="14">
-                <input
-                    nz-input
-                    placeholder="Insira um valor"
-                    name="valor"
-                    type="number"
-                    min="0"
-                    formControlName="valor"
-                >
-              </nz-form-control>
-            </nz-form-item >
-            <button>Clica aqui</button>
-          </form>
-    </main>
+    <form nz-form (ngSubmit)="submitForm()">
+      <nz-form-item>
+        <nz-form-control [nzSpan]="14">
+          <input
+            nz-input
+            placeholder="Insira um valor"
+            name="valor"
+            type="number"
+            min="0"
+            formControlName="valor"
+          />
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control [nzSpan]="12" nzErrorTip="Please select your gender!">
+          <nz-select
+            id="gender"
+            formControlName="gender"
+            nzPlaceHolder="Selecione uma moeda"
+          >
+            <nz-option
+              [nzValue]="moeda.abreviacao"
+              [nzLabel]="moeda.nome"
+              *ngFor="let moeda of moedas"
+            >
+            </nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+      <button>Clica aqui</button>
+    </form>
+  </main>
 </div>

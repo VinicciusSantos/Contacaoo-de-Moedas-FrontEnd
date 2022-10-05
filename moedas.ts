@@ -1,626 +1,626 @@
 export const moedas = [
     {
         "abreviacao": "AED",
-        "local": "Dirham dos Emirados"
+        "nome": "Dirham dos Emirados"
     },
     {
         "abreviacao": "AFN",
-        "local": "Afghani do Afeganistão"
+        "nome": "Afghani do Afeganistão"
     },
     {
         "abreviacao": "ALL",
-        "local": "Lek Albanês"
+        "nome": "Lek Albanês"
     },
     {
         "abreviacao": "AMD",
-        "local": "Dram Armênio"
+        "nome": "Dram Armênio"
     },
     {
         "abreviacao": "ANG",
-        "local": "Guilder das Antilhas"
+        "nome": "Guilder das Antilhas"
     },
     {
         "abreviacao": "AOA",
-        "local": "Kwanza Angolano"
+        "nome": "Kwanza Angolano"
     },
     {
         "abreviacao": "ARS",
-        "local": "Peso Argentino"
+        "nome": "Peso Argentino"
     },
     {
         "abreviacao": "AUD",
-        "local": "Dólar Australiano"
+        "nome": "Dólar Australiano"
     },
     {
         "abreviacao": "AZN",
-        "local": "Manat Azeri"
+        "nome": "Manat Azeri"
     },
     {
         "abreviacao": "BAM",
-        "local": "Marco Conversível"
+        "nome": "Marco Conversível"
     },
     {
         "abreviacao": "BBD",
-        "local": "Dólar de Barbados"
+        "nome": "Dólar de Barbados"
     },
     {
         "abreviacao": "BDT",
-        "local": "Taka de Bangladesh"
+        "nome": "Taka de Bangladesh"
     },
     {
         "abreviacao": "BGN",
-        "local": "Lev Búlgaro"
+        "nome": "Lev Búlgaro"
     },
     {
         "abreviacao": "BHD",
-        "local": "Dinar do Bahrein"
+        "nome": "Dinar do Bahrein"
     },
     {
         "abreviacao": "BIF",
-        "local": "Franco Burundinense"
+        "nome": "Franco Burundinense"
     },
     {
         "abreviacao": "BND",
-        "local": "Dólar de Brunei"
+        "nome": "Dólar de Brunei"
     },
     {
         "abreviacao": "BOB",
-        "local": "Boliviano"
+        "nome": "Boliviano"
     },
     {
         "abreviacao": "BRL",
-        "local": "Real Brasileiro"
+        "nome": "Real Brasileiro"
     },
     {
         "abreviacao": "BRLT",
-        "local": "Real Brasileiro Turismo"
+        "nome": "Real Brasileiro Turismo"
     },
     {
         "abreviacao": "BSD",
-        "local": "Dólar das Bahamas"
+        "nome": "Dólar das Bahamas"
     },
     {
         "abreviacao": "BTC",
-        "local": "Bitcoin"
+        "nome": "Bitcoin"
     },
     {
         "abreviacao": "BWP",
-        "local": "Pula de Botswana"
+        "nome": "Pula de Botswana"
     },
     {
         "abreviacao": "BYN",
-        "local": "Rublo Bielorrusso"
+        "nome": "Rublo Bielorrusso"
     },
     {
         "abreviacao": "BZD",
-        "local": "Dólar de Belize"
+        "nome": "Dólar de Belize"
     },
     {
         "abreviacao": "CAD",
-        "local": "Dólar Canadense"
+        "nome": "Dólar Canadense"
     },
     {
         "abreviacao": "CHF",
-        "local": "Franco Suíço"
+        "nome": "Franco Suíço"
     },
     {
         "abreviacao": "CHFRTS",
-        "local": "Franco Suíço"
+        "nome": "Franco Suíço"
     },
     {
         "abreviacao": "CLP",
-        "local": "Peso Chileno"
+        "nome": "Peso Chileno"
     },
     {
         "abreviacao": "CNH",
-        "local": "Yuan chinês offshore"
+        "nome": "Yuan chinês offshore"
     },
     {
         "abreviacao": "CNY",
-        "local": "Yuan Chinês"
+        "nome": "Yuan Chinês"
     },
     {
         "abreviacao": "COP",
-        "local": "Peso Colombiano"
+        "nome": "Peso Colombiano"
     },
     {
         "abreviacao": "CRC",
-        "local": "Colón Costarriquenho"
+        "nome": "Colón Costarriquenho"
     },
     {
         "abreviacao": "CUP",
-        "local": "Peso Cubano"
+        "nome": "Peso Cubano"
     },
     {
         "abreviacao": "CVE",
-        "local": "Escudo cabo-verdiano"
+        "nome": "Escudo cabo-verdiano"
     },
     {
         "abreviacao": "CZK",
-        "local": "Coroa Checa"
+        "nome": "Coroa Checa"
     },
     {
         "abreviacao": "DJF",
-        "local": "Franco do Djubouti"
+        "nome": "Franco do Djubouti"
     },
     {
         "abreviacao": "DKK",
-        "local": "Coroa Dinamarquesa"
+        "nome": "Coroa Dinamarquesa"
     },
     {
         "abreviacao": "DOGE",
-        "local": "Dogecoin"
+        "nome": "Dogecoin"
     },
     {
         "abreviacao": "DOP",
-        "local": "Peso Dominicano"
+        "nome": "Peso Dominicano"
     },
     {
         "abreviacao": "DZD",
-        "local": "Dinar Argelino"
+        "nome": "Dinar Argelino"
     },
     {
         "abreviacao": "EGP",
-        "local": "Libra Egípcia"
+        "nome": "Libra Egípcia"
     },
     {
         "abreviacao": "ETB",
-        "local": "Birr Etíope"
+        "nome": "Birr Etíope"
     },
     {
         "abreviacao": "ETH",
-        "local": "Ethereum"
+        "nome": "Ethereum"
     },
     {
         "abreviacao": "EUR",
-        "local": "Euro"
+        "nome": "Euro"
     },
     {
         "abreviacao": "FJD",
-        "local": "Dólar de Fiji"
+        "nome": "Dólar de Fiji"
     },
     {
         "abreviacao": "GBP",
-        "local": "Libra Esterlina"
+        "nome": "Libra Esterlina"
     },
     {
         "abreviacao": "GEL",
-        "local": "Lari Georgiano"
+        "nome": "Lari Georgiano"
     },
     {
         "abreviacao": "GHS",
-        "local": "Cedi Ganês"
+        "nome": "Cedi Ganês"
     },
     {
         "abreviacao": "GMD",
-        "local": "Dalasi da Gâmbia"
+        "nome": "Dalasi da Gâmbia"
     },
     {
         "abreviacao": "GNF",
-        "local": "Franco de Guiné"
+        "nome": "Franco de Guiné"
     },
     {
         "abreviacao": "GTQ",
-        "local": "Quetzal Guatemalteco"
+        "nome": "Quetzal Guatemalteco"
     },
     {
         "abreviacao": "HKD",
-        "local": "Dólar de Hong Kong"
+        "nome": "Dólar de Hong Kong"
     },
     {
         "abreviacao": "HNL",
-        "local": "Lempira Hondurenha"
+        "nome": "Lempira Hondurenha"
     },
     {
         "abreviacao": "HRK",
-        "local": "Kuna Croata"
+        "nome": "Kuna Croata"
     },
     {
         "abreviacao": "HTG",
-        "local": "Gourde Haitiano"
+        "nome": "Gourde Haitiano"
     },
     {
         "abreviacao": "HUF",
-        "local": "Florim Húngaro"
+        "nome": "Florim Húngaro"
     },
     {
         "abreviacao": "IDR",
-        "local": "Rupia Indonésia"
+        "nome": "Rupia Indonésia"
     },
     {
         "abreviacao": "ILS",
-        "local": "Novo Shekel Israelense"
+        "nome": "Novo Shekel Israelense"
     },
     {
         "abreviacao": "INR",
-        "local": "Rúpia Indiana"
+        "nome": "Rúpia Indiana"
     },
     {
         "abreviacao": "IQD",
-        "local": "Dinar Iraquiano"
+        "nome": "Dinar Iraquiano"
     },
     {
         "abreviacao": "IRR",
-        "local": "Rial Iraniano"
+        "nome": "Rial Iraniano"
     },
     {
         "abreviacao": "ISK",
-        "local": "Coroa Islandesa"
+        "nome": "Coroa Islandesa"
     },
     {
         "abreviacao": "JMD",
-        "local": "Dólar Jamaicano"
+        "nome": "Dólar Jamaicano"
     },
     {
         "abreviacao": "JOD",
-        "local": "Dinar Jordaniano"
+        "nome": "Dinar Jordaniano"
     },
     {
         "abreviacao": "JPY",
-        "local": "Iene Japonês"
+        "nome": "Iene Japonês"
     },
     {
         "abreviacao": "JPYRTS",
-        "local": "Iene Japonês"
+        "nome": "Iene Japonês"
     },
     {
         "abreviacao": "KES",
-        "local": "Shilling Queniano"
+        "nome": "Shilling Queniano"
     },
     {
         "abreviacao": "KGS",
-        "local": "Som Quirguistanês"
+        "nome": "Som Quirguistanês"
     },
     {
         "abreviacao": "KHR",
-        "local": "Riel Cambojano"
+        "nome": "Riel Cambojano"
     },
     {
         "abreviacao": "KMF",
-        "local": "Franco Comorense"
+        "nome": "Franco Comorense"
     },
     {
         "abreviacao": "KRW",
-        "local": "Won Sul-Coreano"
+        "nome": "Won Sul-Coreano"
     },
     {
         "abreviacao": "KWD",
-        "local": "Dinar Kuwaitiano"
+        "nome": "Dinar Kuwaitiano"
     },
     {
         "abreviacao": "KYD",
-        "local": "Dólar das Ilhas Cayman"
+        "nome": "Dólar das Ilhas Cayman"
     },
     {
         "abreviacao": "KZT",
-        "local": "Tengue Cazaquistanês"
+        "nome": "Tengue Cazaquistanês"
     },
     {
         "abreviacao": "LAK",
-        "local": "Kip Laosiano"
+        "nome": "Kip Laosiano"
     },
     {
         "abreviacao": "LBP",
-        "local": "Libra Libanesa"
+        "nome": "Libra Libanesa"
     },
     {
         "abreviacao": "LKR",
-        "local": "Rúpia de Sri Lanka"
+        "nome": "Rúpia de Sri Lanka"
     },
     {
         "abreviacao": "LSL",
-        "local": "Loti do Lesoto"
+        "nome": "Loti do Lesoto"
     },
     {
         "abreviacao": "LTC",
-        "local": "Litecoin"
+        "nome": "Litecoin"
     },
     {
         "abreviacao": "LYD",
-        "local": "Dinar Líbio"
+        "nome": "Dinar Líbio"
     },
     {
         "abreviacao": "MAD",
-        "local": "Dirham Marroquino"
+        "nome": "Dirham Marroquino"
     },
     {
         "abreviacao": "MDL",
-        "local": "Leu Moldavo"
+        "nome": "Leu Moldavo"
     },
     {
         "abreviacao": "MGA",
-        "local": "Ariary Madagascarense"
+        "nome": "Ariary Madagascarense"
     },
     {
         "abreviacao": "MKD",
-        "local": "Denar Macedônio"
+        "nome": "Denar Macedônio"
     },
     {
         "abreviacao": "MMK",
-        "local": "Kyat de Mianmar"
+        "nome": "Kyat de Mianmar"
     },
     {
         "abreviacao": "MNT",
-        "local": "Mongolian Tugrik"
+        "nome": "Mongolian Tugrik"
     },
     {
         "abreviacao": "MOP",
-        "local": "Pataca de Macau"
+        "nome": "Pataca de Macau"
     },
     {
         "abreviacao": "MRO",
-        "local": "Ouguiya Mauritana"
+        "nome": "Ouguiya Mauritana"
     },
     {
         "abreviacao": "MUR",
-        "local": "Rúpia Mauriciana"
+        "nome": "Rúpia Mauriciana"
     },
     {
         "abreviacao": "MVR",
-        "local": "Rufiyaa Maldiva"
+        "nome": "Rufiyaa Maldiva"
     },
     {
         "abreviacao": "MWK",
-        "local": "Kwacha Malauiana"
+        "nome": "Kwacha Malauiana"
     },
     {
         "abreviacao": "MXN",
-        "local": "Peso Mexicano"
+        "nome": "Peso Mexicano"
     },
     {
         "abreviacao": "MYR",
-        "local": "Ringgit Malaio"
+        "nome": "Ringgit Malaio"
     },
     {
         "abreviacao": "MZN",
-        "local": "Metical de Moçambique"
+        "nome": "Metical de Moçambique"
     },
     {
         "abreviacao": "NAD",
-        "local": "Dólar Namíbio"
+        "nome": "Dólar Namíbio"
     },
     {
         "abreviacao": "NGN",
-        "local": "Naira Nigeriana"
+        "nome": "Naira Nigeriana"
     },
     {
         "abreviacao": "NGNI",
-        "local": "Naira Nigeriana"
+        "nome": "Naira Nigeriana"
     },
     {
         "abreviacao": "NGNPARALLEL",
-        "local": "Naira Nigeriana"
+        "nome": "Naira Nigeriana"
     },
     {
         "abreviacao": "NIO",
-        "local": "Córdoba Nicaraguense"
+        "nome": "Córdoba Nicaraguense"
     },
     {
         "abreviacao": "NOK",
-        "local": "Coroa Norueguesa"
+        "nome": "Coroa Norueguesa"
     },
     {
         "abreviacao": "NPR",
-        "local": "Rúpia Nepalesa"
+        "nome": "Rúpia Nepalesa"
     },
     {
         "abreviacao": "NZD",
-        "local": "Dólar Neozelandês"
+        "nome": "Dólar Neozelandês"
     },
     {
         "abreviacao": "OMR",
-        "local": "Rial Omanense"
+        "nome": "Rial Omanense"
     },
     {
         "abreviacao": "PAB",
-        "local": "Balboa Panamenho"
+        "nome": "Balboa Panamenho"
     },
     {
         "abreviacao": "PEN",
-        "local": "Sol do Peru"
+        "nome": "Sol do Peru"
     },
     {
         "abreviacao": "PGK",
-        "local": "Kina Papua-Nova Guiné"
+        "nome": "Kina Papua-Nova Guiné"
     },
     {
         "abreviacao": "PHP",
-        "local": "Peso Filipino"
+        "nome": "Peso Filipino"
     },
     {
         "abreviacao": "PKR",
-        "local": "Rúpia Paquistanesa"
+        "nome": "Rúpia Paquistanesa"
     },
     {
         "abreviacao": "PLN",
-        "local": "Zlóti Polonês"
+        "nome": "Zlóti Polonês"
     },
     {
         "abreviacao": "PYG",
-        "local": "Guarani Paraguaio"
+        "nome": "Guarani Paraguaio"
     },
     {
         "abreviacao": "QAR",
-        "local": "Rial Catarense"
+        "nome": "Rial Catarense"
     },
     {
         "abreviacao": "RON",
-        "local": "Leu Romeno"
+        "nome": "Leu Romeno"
     },
     {
         "abreviacao": "RSD",
-        "local": "Dinar Sérvio"
+        "nome": "Dinar Sérvio"
     },
     {
         "abreviacao": "RUB",
-        "local": "Rublo Russo"
+        "nome": "Rublo Russo"
     },
     {
         "abreviacao": "RUBTOD",
-        "local": "Rublo Russo"
+        "nome": "Rublo Russo"
     },
     {
         "abreviacao": "RUBTOM",
-        "local": "Rublo Russo"
+        "nome": "Rublo Russo"
     },
     {
         "abreviacao": "RWF",
-        "local": "Franco Ruandês"
+        "nome": "Franco Ruandês"
     },
     {
         "abreviacao": "SAR",
-        "local": "Riyal Saudita"
+        "nome": "Riyal Saudita"
     },
     {
         "abreviacao": "SCR",
-        "local": "Rúpias de Seicheles"
+        "nome": "Rúpias de Seicheles"
     },
     {
         "abreviacao": "SDG",
-        "local": "Libra Sudanesa"
+        "nome": "Libra Sudanesa"
     },
     {
         "abreviacao": "SDR",
-        "local": "DSE"
+        "nome": "DSE"
     },
     {
         "abreviacao": "SEK",
-        "local": "Coroa Sueca"
+        "nome": "Coroa Sueca"
     },
     {
         "abreviacao": "SGD",
-        "local": "Dólar de Cingapura"
+        "nome": "Dólar de Cingapura"
     },
     {
         "abreviacao": "SOS",
-        "local": "Shilling Somaliano"
+        "nome": "Shilling Somaliano"
     },
     {
         "abreviacao": "STD",
-        "local": "Dobra São Tomé/Príncipe"
+        "nome": "Dobra São Tomé/Príncipe"
     },
     {
         "abreviacao": "SVC",
-        "local": "Colon de El Salvador"
+        "nome": "Colon de El Salvador"
     },
     {
         "abreviacao": "SYP",
-        "local": "Libra Síria"
+        "nome": "Libra Síria"
     },
     {
         "abreviacao": "SZL",
-        "local": "Lilangeni Suazilandês"
+        "nome": "Lilangeni Suazilandês"
     },
     {
         "abreviacao": "THB",
-        "local": "Baht Tailandês"
+        "nome": "Baht Tailandês"
     },
     {
         "abreviacao": "TJS",
-        "local": "Somoni do Tajiquistão"
+        "nome": "Somoni do Tajiquistão"
     },
     {
         "abreviacao": "TMT",
-        "local": "TMT"
+        "nome": "TMT"
     },
     {
         "abreviacao": "TND",
-        "local": "Dinar Tunisiano"
+        "nome": "Dinar Tunisiano"
     },
     {
         "abreviacao": "TRY",
-        "local": "Nova Lira Turca"
+        "nome": "Nova Lira Turca"
     },
     {
         "abreviacao": "TTD",
-        "local": "Dólar de Trinidad"
+        "nome": "Dólar de Trinidad"
     },
     {
         "abreviacao": "TWD",
-        "local": "Dólar Taiuanês"
+        "nome": "Dólar Taiuanês"
     },
     {
         "abreviacao": "TZS",
-        "local": "Shilling Tanzaniano"
+        "nome": "Shilling Tanzaniano"
     },
     {
         "abreviacao": "UAH",
-        "local": "Hryvinia Ucraniana"
+        "nome": "Hryvinia Ucraniana"
     },
     {
         "abreviacao": "UGX",
-        "local": "Shilling Ugandês"
+        "nome": "Shilling Ugandês"
     },
     {
         "abreviacao": "USD",
-        "local": "Dólar Americano"
+        "nome": "Dólar Americano"
     },
     {
         "abreviacao": "USDT",
-        "local": "Dólar Americano"
+        "nome": "Dólar Americano"
     },
     {
         "abreviacao": "UYU",
-        "local": "Peso Uruguaio"
+        "nome": "Peso Uruguaio"
     },
     {
         "abreviacao": "UZS",
-        "local": "Som Uzbequistanês"
+        "nome": "Som Uzbequistanês"
     },
     {
         "abreviacao": "VEF",
-        "local": "Bolívar Venezuelano"
+        "nome": "Bolívar Venezuelano"
     },
     {
         "abreviacao": "VND",
-        "local": "Dong Vietnamita"
+        "nome": "Dong Vietnamita"
     },
     {
         "abreviacao": "VUV",
-        "local": "Vatu de Vanuatu"
+        "nome": "Vatu de Vanuatu"
     },
     {
         "abreviacao": "XAF",
-        "local": "Franco CFA Central"
+        "nome": "Franco CFA Central"
     },
     {
         "abreviacao": "XAGG",
-        "local": "XPrata"
+        "nome": "XPrata"
     },
     {
         "abreviacao": "XBR",
-        "local": "Brent Spot"
+        "nome": "Brent Spot"
     },
     {
         "abreviacao": "XCD",
-        "local": "Dólar do Caribe Oriental"
+        "nome": "Dólar do Caribe Oriental"
     },
     {
         "abreviacao": "XOF",
-        "local": "Franco CFA Ocidental"
+        "nome": "Franco CFA Ocidental"
     },
     {
         "abreviacao": "XPF",
-        "local": "Franco CFP"
+        "nome": "Franco CFP"
     },
     {
         "abreviacao": "XRP",
-        "local": "XRP"
+        "nome": "XRP"
     },
     {
         "abreviacao": "YER",
-        "local": "Riyal Iemenita"
+        "nome": "Riyal Iemenita"
     },
     {
         "abreviacao": "ZAR",
-        "local": "Rand Sul-Africano"
+        "nome": "Rand Sul-Africano"
     },
     {
         "abreviacao": "ZMK",
-        "local": "Kwacha Zambiana"
+        "nome": "Kwacha Zambiana"
     },
     {
         "abreviacao": "ZWL",
-        "local": "Dólar Zimbabuense"
+        "nome": "Dólar Zimbabuense"
     }
 ]
