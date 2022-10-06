@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { moedas } from 'moedas';
 import {
   UntypedFormBuilder,
   UntypedFormGroup,
   Validators,
 } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+
 import { MoedaService } from './moeda.service';
+import { moedas } from 'moedas';
 
 export interface modelMoeda {
   code: string;
@@ -35,8 +34,8 @@ export class AppComponent {
   ) {}
 
   calcConversao(valor: number): number {
-    console.log(valor)
-    return parseFloat(this.validateForm.value.valor) * valor
+    console.log(valor);
+    return parseFloat(this.validateForm.value.valor) * valor;
   }
 
   moedas = moedas;
@@ -48,23 +47,33 @@ export class AppComponent {
   data!: modelMoeda;
   resultado!: any;
 
-  submitForm(): void {
-    this.moedaService
-      .getCotacao(
-        this.validateForm.value.moedaInicial,
-        this.validateForm.value.moedaFinal
-      )
-      .subscribe((data: any) => {
-        this.data = data[0];
-        this.resultado = this.calcConversao(parseFloat(data[0].high)).toFixed(2)
-      });
-  }
-
   ngOnInit(): void {
     this.validateForm = this.fb.group({
       valor: [null, [Validators.required]],
       moedaInicial: [null, [Validators.required]],
       moedaFinal: [null, [Validators.required]],
     });
+  }
+
+  submitForm(): void {
+    if( this.validateForm.value.moedaInicial == this.validateForm.value.moedaFinal ) {
+      console.log(this.validateForm.value.valor)
+      this.resultado = (this.validateForm.value.valor).toFixed(2);
+    }
+
+    else {
+      this.moedaService
+        .getCotacao(
+          this.validateForm.value.moedaInicial,
+          this.validateForm.value.moedaFinal
+        )
+        .subscribe((data: any) => {
+          this.data = data[0];
+          this.resultado = this.calcConversao(parseFloat(data[0].high)).toFixed(
+            2
+          );
+        });
+    }
+
   }
 }

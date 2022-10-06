@@ -18,9 +18,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,11 +28,9 @@ registerLocaleData(en);
     NzFormModule,
     NzInputModule,
     ReactiveFormsModule,
-    NzSelectModule
+    NzSelectModule,
   ],
-  providers: [
-    { provide: NZ_I18N, useValue: en_US }
-  ],
-  bootstrap: [AppComponent]
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
