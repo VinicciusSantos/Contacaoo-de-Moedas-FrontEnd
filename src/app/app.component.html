@@ -3,50 +3,47 @@
     <h1>CONVERSOR DE MOEDAS</h1>
 
     <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
-      <nz-form-item>
-        <nz-form-control [nzSpan]="14">
-          <input
-            nz-input
-            placeholder="Insira um valor"
-            name="valor"
-            type="number"
-            min="0"
-            formControlName="valor"
-          />
-        </nz-form-control>
-      </nz-form-item>
-      <nz-form-item>
-        <nz-form-control [nzSpan]="12" nzErrorTip="Please select your gender!">
-          <nz-select
-            id="gender"
-            nzPlaceHolder="Selecione uma moeda"
-            formControlName="moedaInicial"
-            [ngClass]="seletor"
+      <nz-input-group>
+        <input
+        nz-input
+        placeholder="Insira um valor"
+        type="number"
+        min="0"
+        formControlName="valor"
+        />
+      </nz-input-group>
+
+      <nz-input-group class="contSelects">
+        <nz-select
+          class="selectMoeda"
+          nzPlaceHolder="Selecione uma moeda"
+          formControlName="moedaInicial"
+          [ngClass]="seletor"
+        >
+        <nz-option
+          [nzValue]="moeda.abreviacao"
+          [nzLabel]="moeda.nome"
+          *ngFor="let moeda of moedas"
           >
-            <nz-option
-              [nzValue]="moeda.abreviacao"
-              [nzLabel]="moeda.nome"
-              *ngFor="let moeda of moedas"
-            >
-            </nz-option>
-          </nz-select>
-          <nz-select
-            id="gender"
-            formControlName="gender"
-            nzPlaceHolder="Selecione uma moeda"
-            formControlName="moedaFinal"
-            [ngClass]="seletor"
-          >
-            <nz-option
-              [nzValue]="moeda.abreviacao"
-              [nzLabel]="moeda.nome"
-              *ngFor="let moeda of moedas"
-            >
-            </nz-option>
-          </nz-select>
-        </nz-form-control>
-      </nz-form-item>
-      <button>Clica aqui</button>
+        </nz-option>
+      </nz-select>
+
+      <button>-></button>
+
+      <nz-select
+        class="selectMoeda"
+        nzPlaceHolder="Selecione uma moeda"
+        formControlName="moedaFinal"
+        [ngClass]="seletor"
+      >
+        <nz-option
+          [nzValue]="moeda.abreviacao"
+          [nzLabel]="moeda.nome"
+          *ngFor="let moeda of moedas"
+        >
+        </nz-option>
+      </nz-select>
+    </nz-input-group>
       <h3 [ngClass]="text" class="resultado"> Resultado: {{ resultado }} {{ validateForm.value.moedaFinal }}</h3>
     </form>
   </main>

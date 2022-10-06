@@ -55,6 +55,12 @@ export class AppComponent {
     });
   }
 
+  changeSelects(){
+    let temp = this.validateForm.value.moedaInicial
+    this.validateForm.value.moedaInicial = this.validateForm.value.moedaFinal
+    this.validateForm.value.moedaFinal = temp
+  }
+
   submitForm(): void {
     if( this.validateForm.value.moedaInicial == this.validateForm.value.moedaFinal ) {
       console.log(this.validateForm.value.valor)
