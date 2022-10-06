@@ -1,140 +1,96 @@
 export const moedas = [
   {
-    "abreviacao": "USD",
-    "nome": "Dólar Americano"
+    abreviacao: 'USD',
+    nome: 'Dólar Americano',
   },
   {
-    "abreviacao": "BRL",
-    "nome": "Real Brasileiro"
+    abreviacao: 'BRL',
+    nome: 'Real Brasileiro',
   },
   {
-    "abreviacao": "EUR",
-    "nome": "Euro"
-  }
-]
-
+    abreviacao: 'EUR',
+    nome: 'Euro',
+  },
+  {
+    abreviacao: 'CAD',
+    nome: 'Dólar Canadense',
+  },
+  {
+    abreviacao: 'GBP',
+    nome: 'Libra Esterlina',
+  },
+  {
+    abreviacao: 'JPY',
+    nome: 'Iene Japonês',
+  },
+  {
+    abreviacao: 'AUD',
+    nome: 'Dólar Australiano',
+  },
+  {
+    abreviacao: 'CHF',
+    nome: 'Franco Suíço',
+  },
+  {
+    abreviacao: 'ARS',
+    nome: 'Peso Argentino',
+  },
+  {
+    abreviacao: 'TRY',
+    nome: 'Nova Lira Turca',
+  },
+  {
+    abreviacao: 'MGA',
+    nome: 'Ariary Madagascarense',
+  },
+  {
+    abreviacao: 'PAB',
+    nome: 'Balboa Panamenho',
+  },
+  {
+    abreviacao: 'BOB',
+    nome: 'Boliviano',
+  },
+  {
+    abreviacao: 'VEF',
+    nome: 'Bolívar Venezuelano',
+  },
+  {
+    abreviacao: 'CZK',
+    nome: 'Coroa Checa',
+  },
+  {
+    abreviacao: 'DKK',
+    nome: 'Coroa Dinamarquesa',
+  },
+  {
+    abreviacao: 'ISK',
+    nome: 'Coroa Islandesa',
+  },
+  {
+    abreviacao: 'NOK',
+    nome: 'Coroa Norueguesa',
+  },
+  {
+    abreviacao: 'SEK',
+    nome: 'Coroa Sueca',
+  },
+  {
+    abreviacao: 'JOD',
+    nome: 'Dinar Jordaniano',
+  },
+  {
+    abreviacao: 'BHD',
+    nome: 'Dinar do Bahrein',
+  },
+  {
+    abreviacao: 'MAD',
+    nome: 'Dirham Marroquino',
+  },
+];
 
 // export const moedas = [
-//   {
-//     "abreviacao": "AFN",
-//     "nome": "Afghani do Afeganistão"
-//   },
-//   {
-//     "abreviacao": "MGA",
-//     "nome": "Ariary Madagascarense"
-//   },
-//   {
-//     "abreviacao": "THB",
-//     "nome": "Baht Tailandês"
-//   },
-//   {
-//     "abreviacao": "PAB",
-//     "nome": "Balboa Panamenho"
-//   },
-//   {
-//     "abreviacao": "ETB",
-//     "nome": "Birr Etíope"
-//   },
-//   {
-//     "abreviacao": "BTC",
-//     "nome": "Bitcoin"
-//   },
-//   {
-//     "abreviacao": "BOB",
-//     "nome": "Boliviano"
-//   },
-//   {
-//     "abreviacao": "VEF",
-//     "nome": "Bolívar Venezuelano"
-//   },
-//   {
-//     "abreviacao": "XBR",
-//     "nome": "Brent Spot"
-//   },
-//   {
-//     "abreviacao": "GHS",
-//     "nome": "Cedi Ganês"
-//   },
-//   {
-//     "abreviacao": "SVC",
-//     "nome": "Colon de El Salvador"
-//   },
-//   {
-//     "abreviacao": "CRC",
-//     "nome": "Colón Costarriquenho"
-//   },
-//   {
-//     "abreviacao": "CZK",
-//     "nome": "Coroa Checa"
-//   },
-//   {
-//     "abreviacao": "DKK",
-//     "nome": "Coroa Dinamarquesa"
-//   },
-//   {
-//     "abreviacao": "ISK",
-//     "nome": "Coroa Islandesa"
-//   },
-//   {
-//     "abreviacao": "NOK",
-//     "nome": "Coroa Norueguesa"
-//   },
-//   {
-//     "abreviacao": "SEK",
-//     "nome": "Coroa Sueca"
-//   },
-//   {
-//     "abreviacao": "NIO",
-//     "nome": "Córdoba Nicaraguense"
-//   },
-//   {
-//     "abreviacao": "SDR",
-//     "nome": "DSE"
-//   },
-//   {
-//     "abreviacao": "GMD",
-//     "nome": "Dalasi da Gâmbia"
-//   },
-//   {
-//     "abreviacao": "MKD",
-//     "nome": "Denar Macedônio"
-//   },
-//   {
-//     "abreviacao": "DZD",
-//     "nome": "Dinar Argelino"
-//   },
-//   {
-//     "abreviacao": "IQD",
-//     "nome": "Dinar Iraquiano"
-//   },
-//   {
-//     "abreviacao": "JOD",
-//     "nome": "Dinar Jordaniano"
-//   },
-//   {
-//     "abreviacao": "KWD",
-//     "nome": "Dinar Kuwaitiano"
-//   },
-//   {
-//     "abreviacao": "LYD",
-//     "nome": "Dinar Líbio"
-//   },
-//   {
-//     "abreviacao": "RSD",
-//     "nome": "Dinar Sérvio"
-//   },
-//   {
-//     "abreviacao": "TND",
-//     "nome": "Dinar Tunisiano"
-//   },
-//   {
-//     "abreviacao": "BHD",
-//     "nome": "Dinar do Bahrein"
-//   },
-//   {
-//     "abreviacao": "MAD",
-//     "nome": "Dirham Marroquino"
-//   },
+
 //   {
 //     "abreviacao": "AED",
 //     "nome": "Dirham dos Emirados"
