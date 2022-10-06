@@ -39,7 +39,7 @@ export class AppComponent {
   validateForm!: UntypedFormGroup;
 
   submitForm(): void {
-    // console.log('submit', this.validateForm.value.moedaInicial);
+    //console.log('submit', this.validateForm.value);
     this.moedaService.getCotacao(this.validateForm.value.moedaInicial, this.validateForm.value.moedaFinal).subscribe(data => {
       console.log(data);
     })

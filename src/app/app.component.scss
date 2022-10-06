@@ -36,7 +36,12 @@ main {
         .formatacao-seletor{
             width: 240px;
             margin-top: 3%;
-        }   
+        }
+        .organição-dos-h4s{
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+        }
         .formatacao-h3{
             font-size: 13px;
             margin-top: 20px;

@@ -21,6 +21,7 @@
             id="gender"
             nzPlaceHolder="Selecione uma moeda"
             formControlName="moedaInicial"
+            [ngClass]="seletor"
           >
             <nz-option
               [nzValue]="moeda.abreviacao"
@@ -34,6 +35,7 @@
             formControlName="gender"
             nzPlaceHolder="Selecione uma moeda"
             formControlName="moedaFinal"
+            [ngClass]="seletor"
           >
             <nz-option
               [nzValue]="moeda.abreviacao"
@@ -67,11 +69,11 @@
           </nz-select>
           <h3 [ngClass]="text">Moeda: RBL</h3>
           <div [ngClass]="apresentacao">
-            <div>
+            <div >
               <h4 [ngClass]="fonte">Valor de Compra:</h4>
               <h4 [ngClass]="fonte">Valor de Venda:</h4>
             </div>
-            <div>
+            <div >
               <h4 [ngClass]="fonte">Variação Máximo:</h4>
               <h4 [ngClass]="fonte">Variação Mínimo:</h4>
             </div>
