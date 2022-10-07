@@ -1,61 +1,71 @@
 @import 'variaveis.scss';
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient($background);
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient($background);
 }
 
 main {
-    width: 35vw;
-    height: 45vh;
+  width: 35vw;
+  max-width: 450px;
+  height: 45vh;
 
-    background-color: $color_branco;
-    border-radius: 10px;
-    box-shadow: $boxShadow_1;
-    
-    padding: 25px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    h1 {
-        color: $color_preto;
-        font-weight: bold;
+  background-color: $color_branco;
+  border-radius: 10px;
+  box-shadow: $boxShadow_1;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+      color: $color_preto;
+      font-weight: bold;
+  }
+
+  form {
+    width: 100%;
+
+    nz-input-group + nz-input-group {
+        margin-top: 15px;
     }
 
-    form {
-        width: 100%;
+    .contSelects {
+      display: flex;
+      justify-content: space-between;
 
-        nz-input-group + nz-input-group {
-            margin-top: 15px;
-        }
-
-        .contSelects {
-            display: flex;
-            justify-content: space-between;
-
-            .selectMoeda {
-                width: 40%;
-            }
-
-        }
-
-        button {
-          font-weight: 500;
-          padding: 5px 10px;
-          border: none;
-          background-color: $color_primary;
-          border-radius: 5px;
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
+      .selectMoeda {
+        width: 40%;
+      }
     }
+
+    button {
+      font-weight: 500;
+      padding: 5px 10px;
+      border: none;
+      background-color: $color_primary;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .resultado {
+    width: 100%;
+
+    .ant-divider {
+      margin-bottom: 5px;
+    }
+
+
+  }
 }

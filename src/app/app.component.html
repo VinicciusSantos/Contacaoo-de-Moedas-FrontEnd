@@ -10,7 +10,7 @@
       <nz-input-group>
         <input
         nz-input
-        placeholder="Insira um valor"
+        placeholder="Valor"
         type="number"
         min="0"
         formControlName="valor"
@@ -21,7 +21,7 @@
       <nz-input-group class="contSelects" >
         <nz-select
           class="selectMoeda"
-          nzPlaceHolder="Selecione uma moeda"
+          nzPlaceHolder="Moeda Inicial"
           formControlName="moedaInicial"
           (ngModelChange)="trySubmit()"
           [ngModel]="validateForm.value.moedaInicial"
@@ -36,14 +36,15 @@
 
       <button
         type="button"
+        title="Inverter Moedas"
         (click)="changeSelects()"
-        >
+      >
         <span nz-icon nzType="retweet" nzTheme="outline"></span>
       </button>
 
       <nz-select
         class="selectMoeda"
-        nzPlaceHolder="Selecione uma moeda"
+        nzPlaceHolder="Moeda Final"
         formControlName="moedaFinal"
         (ngModelChange)="trySubmit()"
         [ngModel]="validateForm.value.moedaFinal"
@@ -56,7 +57,22 @@
         </nz-option>
       </nz-select>
     </nz-input-group>
-      <h3 class="resultado"> Resultado: {{ resultado }} {{ validateForm.value.moedaFinal }}</h3>
-    </form>
-  </main>
+  </form>
+
+  <div class="resultado" *ngIf="mostrarResultado">
+    <nz-divider nzText="Resultados"></nz-divider>
+
+    <ul>
+      <li>
+        <strong>Cotação Atual do {{ validateForm.value.moedaInicial }}:</strong>
+        {{ cotacao }} {{ validateForm.value.moedaFinal}}
+      </li>
+      <li>
+        <strong>{{ validateForm.value.valor }} {{ validateForm.value.moedaInicial }} são:</strong>
+        {{ resultado }} {{ validateForm.value.moedaFinal }}
+      </li>
+    </ul>
+  </div>
+
+</main>
 </div>

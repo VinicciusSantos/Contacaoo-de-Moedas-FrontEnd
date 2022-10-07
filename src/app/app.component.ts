@@ -34,14 +34,15 @@ export class AppComponent {
   ) {}
 
   calcConversao(valor: number): number {
-    console.log(valor);
     return parseFloat(this.validateForm.value.valor) * valor;
   }
 
   moedas = moedas;
   validateForm!: UntypedFormGroup;
   data!: modelMoeda;
-  resultado!: any;
+  resultado!: string;
+  cotacao!: string;
+  mostrarResultado: boolean = false
 
   ngOnInit(): void {
     this.validateForm = this.fb.group({
@@ -58,9 +59,11 @@ export class AppComponent {
   }
 
   submitForm(): void {
+    this.mostrarResultado = false
     if( this.validateForm.value.moedaInicial == this.validateForm.value.moedaFinal ) {
-      console.log(this.validateForm.value.valor)
+      this.cotacao = '1.00'
       this.resultado = (this.validateForm.value.valor).toFixed(2);
+      this.mostrarResultado = true
     }
 
     else {
@@ -72,6 +75,8 @@ export class AppComponent {
         .subscribe((data: any) => {
           this.data = data[0];
           this.resultado = this.calcConversao(parseFloat(data[0].high)).toFixed(2);
+          this.cotacao = parseFloat(data[0].high).toFixed(2)
+          this.mostrarResultado = true
         });
     }
   }
