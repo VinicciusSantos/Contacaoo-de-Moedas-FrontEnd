@@ -61,11 +61,14 @@ main {
 
   .resultado {
     width: 100%;
-
+    
     .ant-divider {
       margin-bottom: 5px;
     }
-
+    
+    ul {
+      list-style: none;
+    }
 
   }
 }
