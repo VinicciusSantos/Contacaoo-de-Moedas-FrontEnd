@@ -39,10 +39,6 @@ export class AppComponent {
   }
 
   moedas = moedas;
-  seletor = ['formatacao-seletor'];
-  text = ['formatacao-h3'];
-  apresentacao = 'organição-dos-h4s';
-  fonte = 'formatacao-h4';
   validateForm!: UntypedFormGroup;
   data!: modelMoeda;
   resultado!: any;
@@ -56,9 +52,9 @@ export class AppComponent {
   }
 
   changeSelects(){
-    let temp = this.validateForm.value.moedaInicial
-    this.validateForm.value.moedaInicial = this.validateForm.value.moedaFinal
-    this.validateForm.value.moedaFinal = temp
+    const aux = this.validateForm.value.moedaFinal
+    this.validateForm.value.moedaFinal = this.validateForm.value.moedaInicial
+    this.validateForm.value.moedainicial = aux
   }
 
   submitForm(): void {
@@ -75,11 +71,15 @@ export class AppComponent {
         )
         .subscribe((data: any) => {
           this.data = data[0];
-          this.resultado = this.calcConversao(parseFloat(data[0].high)).toFixed(
-            2
-          );
+          this.resultado = this.calcConversao(parseFloat(data[0].high)).toFixed(2);
         });
     }
+  }
 
+  trySubmit(){
+    // A função vê se tem todos os parâmetros para o submit ser feito automaticamente
+    let qtd_total = Object.values(this.validateForm.value).length
+    let qtd_preenchidos = Object.values(this.validateForm.value).filter(val => val).length
+    if (qtd_total === qtd_preenchidos) this.submitForm()
   }
 }

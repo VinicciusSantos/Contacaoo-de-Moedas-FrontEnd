@@ -2,7 +2,11 @@
   <main>
     <h1>CONVERSOR DE MOEDAS</h1>
 
-    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <form
+      nz-form
+      [formGroup]="validateForm"
+      (ngSubmit)="submitForm()"
+    >
       <nz-input-group>
         <input
         nz-input
@@ -10,31 +14,39 @@
         type="number"
         min="0"
         formControlName="valor"
+        (ngModelChange)="trySubmit()"
         />
       </nz-input-group>
 
-      <nz-input-group class="contSelects">
+      <nz-input-group class="contSelects" >
         <nz-select
           class="selectMoeda"
           nzPlaceHolder="Selecione uma moeda"
           formControlName="moedaInicial"
-          [ngClass]="seletor"
+          (ngModelChange)="trySubmit()"
+          [ngModel]="validateForm.value.moedaInicial"
         >
         <nz-option
           [nzValue]="moeda.abreviacao"
           [nzLabel]="moeda.nome"
           *ngFor="let moeda of moedas"
-          >
+        >
         </nz-option>
       </nz-select>
 
-      <button>-></button>
+      <button
+        type="button"
+        (click)="changeSelects()"
+        >
+        <span nz-icon nzType="retweet" nzTheme="outline"></span>
+      </button>
 
       <nz-select
         class="selectMoeda"
         nzPlaceHolder="Selecione uma moeda"
         formControlName="moedaFinal"
-        [ngClass]="seletor"
+        (ngModelChange)="trySubmit()"
+        [ngModel]="validateForm.value.moedaFinal"
       >
         <nz-option
           [nzValue]="moeda.abreviacao"
@@ -44,7 +56,7 @@
         </nz-option>
       </nz-select>
     </nz-input-group>
-      <h3 [ngClass]="text" class="resultado"> Resultado: {{ resultado }} {{ validateForm.value.moedaFinal }}</h3>
+      <h3 class="resultado"> Resultado: {{ resultado }} {{ validateForm.value.moedaFinal }}</h3>
     </form>
   </main>
 </div>
