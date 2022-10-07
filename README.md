@@ -19,6 +19,30 @@ Consumo de [API](https://docs.awesomeapi.com.br/api-de-moedas) de cotação de m
 ## Preview
 ![Preview](/src/assets/preview.PNG)
 
+## Moedas Suportadas:
+  - USD: Dólar Americano
+  - BRL: Real Brasileiro
+  - EUR: Euro
+  - CAD: Dólar Canadense
+  - GBP: Libra Esterlina
+  - JPY: Iene Japonês
+  - AUD: Dólar Australiano
+  - CHF: Franco Suíço
+  - ARS: Peso Argentino
+  - TRY: Nova Lira Turca
+  - MGA: Ariary Madagascarense
+  - PAB: Balboa Panamenho
+  - BOB: Boliviano
+  - VEF: Bolívar Venezuelano
+  - CZK: Coroa Checa
+  - DKK: Coroa Dinamarquesa
+  - ISK: Coroa Islandesa
+  - NOK: Coroa Norueguesa
+  - SEK: Coroa Sueca
+  - JOD: Dinar Jordaniano
+  - BHD: Dinar do Bahrein
+  - MAD: Dirham Marroquino
+
 ## Link do FrontEnd no vercel:
 https://cotacao-de-moedas-azure.vercel.app/
 
