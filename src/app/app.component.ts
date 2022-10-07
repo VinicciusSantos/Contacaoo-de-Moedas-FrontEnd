@@ -55,7 +55,7 @@ export class AppComponent {
   changeSelects(){
     const aux = this.validateForm.value.moedaFinal
     this.validateForm.value.moedaFinal = this.validateForm.value.moedaInicial
-    this.validateForm.value.moedainicial = aux
+    this.validateForm.value.moedaInicial = aux
   }
 
   submitForm(): void {
@@ -77,6 +77,8 @@ export class AppComponent {
           this.resultado = this.calcConversao(parseFloat(data[0].high)).toFixed(2);
           this.cotacao = parseFloat(data[0].high).toFixed(2)
           this.mostrarResultado = true
+          this.validateForm.value.moedaInicial = data[0].code
+          this.validateForm.value.moedaFinal = data[0].codein
         });
     }
   }

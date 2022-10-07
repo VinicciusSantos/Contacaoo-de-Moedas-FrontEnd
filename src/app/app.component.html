@@ -44,13 +44,13 @@
       </button>
 
       <nz-select
-        nzShowSearch
-        class="selectMoeda"
-        nzPlaceHolder="Moeda Final"
-        formControlName="moedaFinal"
-        (ngModelChange)="trySubmit()"
-        [ngModel]="validateForm.value.moedaFinal"
-      >
+          nzShowSearch
+          class="selectMoeda"
+          nzPlaceHolder="Moeda Final"
+          formControlName="moedaFinal"
+          (ngModelChange)="trySubmit()"
+          [ngModel]="validateForm.value.moedaFinal"
+        >
         <nz-option
           [nzValue]="moeda.abreviacao"
           [nzLabel]="moeda.nome"
